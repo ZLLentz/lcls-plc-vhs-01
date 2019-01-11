@@ -1,8 +1,7 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<TcSmItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2012/07/TcSmItem" TcSmVersion="1.0" TcVersion="3.1.4020.32" ClassName="CNcAxisDef" SubType="1">
+<TcSmItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ClassName="CNcAxisDef" SubType="1" TcSmVersion="1.0" TcVersion="3.1.4020.32" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2012/07/TcSmItem">
 	<DataTypes>
 		<DataType>
-			<Name GUID="{18071995-0000-0000-0000-000000000035}" TcBaseType="true" HideType="true">UINTARR2</Name>
+			<Name GUID="{18071995-0000-0000-0000-000000000035}" HideType="true" TcBaseType="true">UINTARR2</Name>
 			<BitSize>32</BitSize>
 			<BaseType GUID="{18071995-0000-0000-0000-000000000005}">UINT</BaseType>
 			<ArrayInfo>
@@ -63,10 +62,10 @@
 				<Name>nState4</Name>
 				<Type GUID="{18071995-0000-0000-0000-000000000002}">USINT</Type>
 				<Comment>
-					<![CDATA[Encoder Status 4 (automatically linked):
+					Encoder Status 4 (automatically linked):
 0x01 (Bit 0) = IO data invalid (e.g. EtherCAT 'WcState')
 0x02 (Bit 1) = IO data input toggle (e.g. EtherCAT 'InputToggle')
-]]>
+
 				</Comment>
 				<BitSize>8</BitSize>
 				<BitOffs>88</BitOffs>
@@ -273,13 +272,13 @@
 				<Name>nState4</Name>
 				<Type GUID="{18071995-0000-0000-0000-000000000002}">USINT</Type>
 				<Comment>
-					<![CDATA[Drive Status 4 (automatically linked):
+					Drive Status 4 (automatically linked):
 0x01 (0000 0001) = IO data invalid (e.g. EtherCAT 'WcState')
 0x02 (0000 0010) = IO data input toggle (e.g. EtherCAT 'InputToggle')
 
 Drive Status 4 (manually linked):
 0x80 (1000 0000) = Fast axis stop (digital IO interrupt)
-]]>
+
 				</Comment>
 				<BitSize>8</BitSize>
 				<BitOffs>88</BitOffs>
@@ -444,7 +443,7 @@ Drive Status 4 (manually linked):
 			</Relations>
 		</DataType>
 		<DataType>
-			<Name GUID="{875D2B22-B7EB-497E-B933-0C004593CCF3}" Namespace="MC" TcBaseType="true" HideType="true" IecDeclaration="DWORD;">PLCTONC_AXIS_REF_CTRL</Name>
+			<Name GUID="{875D2B22-B7EB-497E-B933-0C004593CCF3}" HideType="true" IecDeclaration="DWORD;" Namespace="MC" TcBaseType="true">PLCTONC_AXIS_REF_CTRL</Name>
 			<BitSize>32</BitSize>
 			<SubItem>
 				<Name>Enable</Name>
@@ -622,7 +621,7 @@ Drive Status 4 (manually linked):
 			</Relations>
 		</DataType>
 		<DataType>
-			<Name GUID="{4C3FC5AC-D5AA-44C6-AC5A-159774BA0F6D}" Namespace="MC" TcBaseType="true" HideType="true" IecDeclaration="DWORD;">NCTOPLC_AXIS_REF_STATE</Name>
+			<Name GUID="{4C3FC5AC-D5AA-44C6-AC5A-159774BA0F6D}" HideType="true" IecDeclaration="DWORD;" Namespace="MC" TcBaseType="true">NCTOPLC_AXIS_REF_STATE</Name>
 			<BitSize>32</BitSize>
 			<SubItem>
 				<Name>Operational</Name>
@@ -821,7 +820,7 @@ Drive Status 4 (manually linked):
 			</Format>
 		</DataType>
 		<DataType>
-			<Name GUID="{6EF49753-C72C-4F50-AA44-3C7498E76CFE}" Namespace="MC" TcBaseType="true" HideType="true" IecDeclaration="DWORD;">NCTOPLC_AXIS_REF_OPMODE</Name>
+			<Name GUID="{6EF49753-C72C-4F50-AA44-3C7498E76CFE}" HideType="true" IecDeclaration="DWORD;" Namespace="MC" TcBaseType="true">NCTOPLC_AXIS_REF_OPMODE</Name>
 			<BitSize>32</BitSize>
 			<SubItem>
 				<Name>OpModePosAreaMonitoring</Name>
@@ -927,7 +926,7 @@ Drive Status 4 (manually linked):
 			</SubItem>
 		</DataType>
 		<DataType>
-			<Name GUID="{303D9411-849C-467F-8A4C-5C8CD0F3DD46}" Namespace="MC" TcBaseType="true" HideType="true">NCTOPLC_AXIS_REF_STATE2_FLAGS</Name>
+			<Name GUID="{303D9411-849C-467F-8A4C-5C8CD0F3DD46}" HideType="true" Namespace="MC" TcBaseType="true">NCTOPLC_AXIS_REF_STATE2_FLAGS</Name>
 			<BitSize>32</BitSize>
 			<SubItem>
 				<Name>AvoidingCollision</Name>
@@ -946,7 +945,7 @@ Drive Status 4 (manually linked):
 			</Format>
 		</DataType>
 		<DataType>
-			<Name GUID="{669F3788-48FD-42CF-8A59-2DA946853FB6}" Namespace="MC" TcBaseType="true" HideType="true">NCTOPLC_AXIS_REF_STATE2</Name>
+			<Name GUID="{669F3788-48FD-42CF-8A59-2DA946853FB6}" HideType="true" Namespace="MC" TcBaseType="true">NCTOPLC_AXIS_REF_STATE2</Name>
 			<BitSize>32</BitSize>
 			<SubItem>
 				<Name>Value</Name>
@@ -971,7 +970,7 @@ Drive Status 4 (manually linked):
 			</Format>
 		</DataType>
 		<DataType>
-			<Name GUID="{BA9D9D0F-1A4A-4A27-A19F-3032626A8491}" Namespace="MC" TcBaseType="true" HideType="true">NCTOPLC_AXIS_REF_CAMCOUPLINGSTATE</Name>
+			<Name GUID="{BA9D9D0F-1A4A-4A27-A19F-3032626A8491}" HideType="true" Namespace="MC" TcBaseType="true">NCTOPLC_AXIS_REF_CAMCOUPLINGSTATE</Name>
 			<BitSize>8</BitSize>
 			<SubItem>
 				<Name>CamActivationPending</Name>
@@ -1005,7 +1004,7 @@ Drive Status 4 (manually linked):
 			</SubItem>
 		</DataType>
 		<DataType>
-			<Name GUID="{18071995-0000-0000-0000-000000000039}" TcBaseType="true" HideType="true">UINTARR8</Name>
+			<Name GUID="{18071995-0000-0000-0000-000000000039}" HideType="true" TcBaseType="true">UINTARR8</Name>
 			<BitSize>128</BitSize>
 			<BaseType GUID="{18071995-0000-0000-0000-000000000005}">UINT</BaseType>
 			<ArrayInfo>
@@ -1032,7 +1031,7 @@ Drive Status 4 (manually linked):
 				<Name>AxisState</Name>
 				<Type GUID="{18071995-0000-0000-0000-000000000008}">UDINT</Type>
 				<Comment>
-					<![CDATA[Present State Of The Axis Movement (continuous axis):
+					Present State Of The Axis Movement (continuous axis):
 0  = INACTIVE:		axis has no job
 1  = RUNNING:		axis is executing a motion job
 2  = OVERRIDE_ZERO:	axis is executing a job but override is zero
@@ -1046,7 +1045,7 @@ Slaves only:
 External Setpoint Generation:
 41 = EXTSETGEN_MODE1:	external setpoint generation active
 42 = EXTSETGEN_MODE2:	internal and external setpoint gen. active
-]]>
+
 				</Comment>
 				<BitSize>32</BitSize>
 				<BitOffs>64</BitOffs>
@@ -1061,7 +1060,7 @@ External Setpoint Generation:
 				<Name>HomingState</Name>
 				<Type GUID="{18071995-0000-0000-0000-000000000008}">UDINT</Type>
 				<Comment>
-					<![CDATA[Axis Homing Status:
+					Axis Homing Status:
 0: idle
 1: start homing
 2: searching home switch
@@ -1069,7 +1068,7 @@ External Setpoint Generation:
 4: moving off home switch
 5: searching sync pulse
 6: stopping after homing
-]]>
+
 				</Comment>
 				<BitSize>32</BitSize>
 				<BitOffs>128</BitOffs>
@@ -1078,12 +1077,12 @@ External Setpoint Generation:
 				<Name>CoupleState</Name>
 				<Type GUID="{18071995-0000-0000-0000-000000000008}">UDINT</Type>
 				<Comment>
-					<![CDATA[Axis Coupling Status:
+					Axis Coupling Status:
 0: axis is a single axis (not coupled)
 1: axis is a master axis
 2: axis is master and slave
 3: axis is a slave axis
-]]>
+
 				</Comment>
 				<BitSize>32</BitSize>
 				<BitOffs>160</BitOffs>
@@ -1310,29 +1309,29 @@ External Setpoint Generation:
 					<Type GUID="{F794B740-82D7-4637-848E-4F74A711D038}">NCAXLESTRUCT_TOPLC4</Type>
 				</Relation>
 				<Relation Priority="100">
-					<Type GUID="{40BD39B0-C3EA-4F74-9F4F-5F1982786F7C}"/>
+					<Type GUID="{40BD39B0-C3EA-4F74-9F4F-5F1982786F7C}" />
 				</Relation>
 				<Relation Priority="100">
-					<Type GUID="{40BD39B2-C3EA-4F74-9F4F-5F1982786F7C}"/>
+					<Type GUID="{40BD39B2-C3EA-4F74-9F4F-5F1982786F7C}" />
 				</Relation>
 				<Relation Priority="100">
-					<Type GUID="{8CDE0C45-AB9D-42DB-BC94-1CF7521AB268}"/>
+					<Type GUID="{8CDE0C45-AB9D-42DB-BC94-1CF7521AB268}" />
 				</Relation>
 			</Relations>
 		</DataType>
 	</DataTypes>
-	<Axis Id="1" CreateSymbols="true" AxisType="1">
+	<Axis AxisType="1" CreateSymbols="true" Id="1">
 		<Name>__FILENAME__</Name>
 		<AxisPara>
-			<General UnitName="°"/>
-			<Dynamic AccelerationMaximum="10" DecelerationMaximum="10" Acceleration="10" Deceleration="10" Jerk="10" DelayTime="0.008"/>
-			<Velo RefSearch="0.1" RefSync="0.01" SlowManual="0.5" FastManual="3" Maximum="3"/>
-			<OtherSettings AllowMotionCmdToSlave="true"/>
+			<General UnitName="mm" />
+			<Dynamic Acceleration="10" AccelerationMaximum="10" Deceleration="10" DecelerationMaximum="10" DelayTime="0.008" Jerk="10" />
+			<Velo FastManual="3" Maximum="3" RefSearch="0.1" RefSync="0.01" SlowManual="0.5" />
+			<OtherSettings AllowMotionCmdToSlave="true" />
 		</AxisPara>
-		<Encoder Name="Enc" EncType="4">
-			<EncPara ScaleFactorNumerator="1" ScaleFactorDenominator="12800" MaxCount="#x0000ffff">
-				<Inc RefSoftSyncMask="#x0000ffff"/>
-				<TimeComp TimeCompMode="1" EncDelayCycles="4"/>
+		<Encoder EncType="4" Name="Enc">
+			<EncPara MaxCount="#x0000ffff" ScaleFactorDenominator="12800" ScaleFactorNumerator="1">
+				<Inc RefSoftSyncMask="#x0000ffff" />
+				<TimeComp EncDelayCycles="4" TimeCompMode="1" />
 			</EncPara>
 			<Vars VarGrpType="1">
 				<Name>Inputs</Name>
@@ -1349,10 +1348,10 @@ External Setpoint Generation:
 					<SubVar>
 						<Name>nState4</Name>
 						<Comment>
-							<![CDATA[Encoder Status 4 (automatically linked):
+							Encoder Status 4 (automatically linked):
 0x01 (Bit 0) = IO data invalid (e.g. EtherCAT 'WcState')
 0x02 (Bit 1) = IO data input toggle (e.g. EtherCAT 'InputToggle')
-]]>
+
 						</Comment>
 					</SubVar>
 					<SubVar TypeFormatIndex="2">
@@ -1399,10 +1398,10 @@ External Setpoint Generation:
 				</Var>
 			</Vars>
 		</Encoder>
-		<Drive Name="Drive" DrvType="24">
+		<Drive DrvType="24" Name="Drive">
 			<DrvPara>
-				<Analog VeloReferenz="10"/>
-				<TimeComp TaskDelayCycles="1"/>
+				<Analog VeloReferenz="10" />
+				<TimeComp TaskDelayCycles="1" />
 			</DrvPara>
 			<Vars VarGrpType="1">
 				<Name>Inputs</Name>
@@ -1419,13 +1418,13 @@ External Setpoint Generation:
 					<SubVar>
 						<Name>nState4</Name>
 						<Comment>
-							<![CDATA[Drive Status 4 (automatically linked):
+							Drive Status 4 (automatically linked):
 0x01 (0000 0001) = IO data invalid (e.g. EtherCAT 'WcState')
 0x02 (0000 0010) = IO data input toggle (e.g. EtherCAT 'InputToggle')
 
 Drive Status 4 (manually linked):
 0x80 (1000 0000) = Fast axis stop (digital IO interrupt)
-]]>
+
 						</Comment>
 					</SubVar>
 					<SubVar TypeFormatIndex="2">
@@ -1457,21 +1456,21 @@ Drive Status 4 (manually linked):
 					<SubVar>
 						<Name>nCtrl2</Name>
 						<Comment>
-							<![CDATA[Digital Outputs Setpoint Generator:
+							Digital Outputs Setpoint Generator:
 0x41 (0100 0001) = Minus (0x42 for inverse motor polarity)
 0x42 (0100 0010) = Plus (0x41 for inverse motor polarity)
 0x80 (1000 0000) = Stop
-]]>
+
 						</Comment>
 					</SubVar>
 					<SubVar>
 						<Name>nCtrl3</Name>
 						<Comment>
-							<![CDATA[Digital Outputs (Setpoint Generator + Position Controller):
+							Digital Outputs (Setpoint Generator + Position Controller):
 0x41 (0100 0001) = Minus (0x42 for inverse motor polarity)
 0x42 (0100 0010) = Plus (0x41 for inverse motor polarity)
 0x80 (1000 0000) = Stop
-]]>
+
 						</Comment>
 					</SubVar>
 					<SubVar TypeFormatIndex="2">
@@ -1489,19 +1488,19 @@ Drive Status 4 (manually linked):
 				</Var>
 			</Vars>
 		</Drive>
-		<Controller Name="Ctrl" CtrType="1">
+		<Controller CtrType="1" Name="Ctrl">
 			<CtrPara PriorControlFactor="1">
-				<Observer BandWidth="20"/>
+				<Observer BandWidth="20" />
 			</CtrPara>
 		</Controller>
-		<Vars VarGrpType="1" InsertType="1">
+		<Vars InsertType="1" VarGrpType="1">
 			<Name>Inputs</Name>
 			<Var>
 				<Name>FromPlc</Name>
 				<Type GUID="{63A84524-72E3-41C8-BEAB-4CCE44690A13}" Namespace="MC">PLCTONC_AXIS_REF</Type>
 			</Var>
 		</Vars>
-		<Vars VarGrpType="2" InsertType="1">
+		<Vars InsertType="1" VarGrpType="2">
 			<Name>Outputs</Name>
 			<Var>
 				<Name>ToPlc</Name>
@@ -1509,7 +1508,7 @@ Drive Status 4 (manually linked):
 				<SubVar>
 					<Name>AxisState</Name>
 					<Comment>
-						<![CDATA[Present State Of The Axis Movement (continuous axis):
+						Present State Of The Axis Movement (continuous axis):
 0  = INACTIVE:		axis has no job
 1  = RUNNING:		axis is executing a motion job
 2  = OVERRIDE_ZERO:	axis is executing a job but override is zero
@@ -1523,13 +1522,13 @@ Slaves only:
 External Setpoint Generation:
 41 = EXTSETGEN_MODE1:	external setpoint generation active
 42 = EXTSETGEN_MODE2:	internal and external setpoint gen. active
-]]>
+
 					</Comment>
 				</SubVar>
 				<SubVar>
 					<Name>HomingState</Name>
 					<Comment>
-						<![CDATA[Axis Homing Status:
+						Axis Homing Status:
 0: idle
 1: start homing
 2: searching home switch
@@ -1537,18 +1536,18 @@ External Setpoint Generation:
 4: moving off home switch
 5: searching sync pulse
 6: stopping after homing
-]]>
+
 					</Comment>
 				</SubVar>
 				<SubVar>
 					<Name>CoupleState</Name>
 					<Comment>
-						<![CDATA[Axis Coupling Status:
+						Axis Coupling Status:
 0: axis is a single axis (not coupled)
 1: axis is a master axis
 2: axis is master and slave
 3: axis is a slave axis
-]]>
+
 					</Comment>
 				</SubVar>
 			</Var>
@@ -1557,36 +1556,36 @@ External Setpoint Generation:
 	<Mappings>
 		<OwnerA>
 			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 3 (EL7031)">
-				<Link VarA="Drive^Inputs^In^nState1" VarB="STM Status^Status^Error" Size="1" OffsA="3"/>
-				<Link VarA="Drive^Inputs^In^nState1" VarB="STM Status^Status^Moving negative" Size="1" OffsA="5"/>
-				<Link VarA="Drive^Inputs^In^nState1" VarB="STM Status^Status^Moving positive" Size="1" OffsA="4"/>
-				<Link VarA="Drive^Inputs^In^nState1" VarB="STM Status^Status^Ready" Size="1" OffsA="1"/>
-				<Link VarA="Drive^Inputs^In^nState1" VarB="STM Status^Status^Ready to enable"/>
-				<Link VarA="Drive^Inputs^In^nState1" VarB="STM Status^Status^Torque reduced" Size="1" OffsA="6"/>
-				<Link VarA="Drive^Inputs^In^nState1" VarB="STM Status^Status^Warning" Size="1" OffsA="2"/>
-				<Link VarA="Drive^Inputs^In^nState2" VarB="STM Status^Status^Sync error" Size="1" OffsA="5"/>
-				<Link VarA="Drive^Inputs^In^nState2" VarB="STM Status^Status^TxPDO Toggle" Size="1" OffsA="7"/>
-				<Link VarA="Drive^Inputs^In^nState4" VarB="WcState^InputToggle" Size="1" OffsA="1"/>
-				<Link VarA="Drive^Inputs^In^nState4" VarB="WcState^WcState"/>
-				<Link VarA="Drive^Outputs^Out^nCtrl1" VarB="STM Control^Control^Enable"/>
-				<Link VarA="Drive^Outputs^Out^nCtrl1" VarB="STM Control^Control^Reduce torque" Size="1" OffsA="2"/>
-				<Link VarA="Drive^Outputs^Out^nCtrl1" VarB="STM Control^Control^Reset" Size="1" OffsA="1"/>
-				<Link VarA="Drive^Outputs^Out^nDataOut2[0]" VarB="STM Velocity^Velocity"/>
-				<Link VarA="Enc^Inputs^In^nDataIn1[0]" VarB="ENC Status compact^Counter value"/>
-				<Link VarA="Enc^Inputs^In^nDataIn2[0]" VarB="ENC Status compact^Latch value"/>
-				<Link VarA="Enc^Inputs^In^nState1" VarB="ENC Status compact^Status^Counter overflow" Size="1" OffsA="4"/>
-				<Link VarA="Enc^Inputs^In^nState1" VarB="ENC Status compact^Status^Counter underflow" Size="1" OffsA="3"/>
-				<Link VarA="Enc^Inputs^In^nState1" VarB="ENC Status compact^Status^Latch extern valid" Size="1" OffsA="1"/>
-				<Link VarA="Enc^Inputs^In^nState1" VarB="ENC Status compact^Status^Set counter done" Size="1" OffsA="2"/>
-				<Link VarA="Enc^Inputs^In^nState2" VarB="ENC Status compact^Status^Status of extern latch" Size="1" OffsA="4"/>
-				<Link VarA="Enc^Inputs^In^nState2" VarB="ENC Status compact^Status^Sync error" Size="1" OffsA="5"/>
-				<Link VarA="Enc^Inputs^In^nState2" VarB="ENC Status compact^Status^TxPDO Toggle" Size="1" OffsA="7"/>
-				<Link VarA="Enc^Inputs^In^nState4" VarB="WcState^InputToggle" Size="1" OffsA="1"/>
-				<Link VarA="Enc^Inputs^In^nState4" VarB="WcState^WcState"/>
-				<Link VarA="Enc^Outputs^Out^nCtrl1" VarB="ENC Control compact^Control^Enable latch extern on negative edge" Size="1" OffsA="3"/>
-				<Link VarA="Enc^Outputs^Out^nCtrl1" VarB="ENC Control compact^Control^Enable latch extern on positive edge" Size="1" OffsA="1"/>
-				<Link VarA="Enc^Outputs^Out^nCtrl1" VarB="ENC Control compact^Control^Set counter" Size="1" OffsA="2"/>
-				<Link VarA="Enc^Outputs^Out^nDataOut1[0]" VarB="ENC Control compact^Set counter value"/>
+				<Link OffsA="3" Size="1" VarA="Drive^Inputs^In^nState1" VarB="STM Status^Status^Error" />
+				<Link OffsA="5" Size="1" VarA="Drive^Inputs^In^nState1" VarB="STM Status^Status^Moving negative" />
+				<Link OffsA="4" Size="1" VarA="Drive^Inputs^In^nState1" VarB="STM Status^Status^Moving positive" />
+				<Link OffsA="1" Size="1" VarA="Drive^Inputs^In^nState1" VarB="STM Status^Status^Ready" />
+				<Link VarA="Drive^Inputs^In^nState1" VarB="STM Status^Status^Ready to enable" />
+				<Link OffsA="6" Size="1" VarA="Drive^Inputs^In^nState1" VarB="STM Status^Status^Torque reduced" />
+				<Link OffsA="2" Size="1" VarA="Drive^Inputs^In^nState1" VarB="STM Status^Status^Warning" />
+				<Link OffsA="5" Size="1" VarA="Drive^Inputs^In^nState2" VarB="STM Status^Status^Sync error" />
+				<Link OffsA="7" Size="1" VarA="Drive^Inputs^In^nState2" VarB="STM Status^Status^TxPDO Toggle" />
+				<Link OffsA="1" Size="1" VarA="Drive^Inputs^In^nState4" VarB="WcState^InputToggle" />
+				<Link VarA="Drive^Inputs^In^nState4" VarB="WcState^WcState" />
+				<Link VarA="Drive^Outputs^Out^nCtrl1" VarB="STM Control^Control^Enable" />
+				<Link OffsA="2" Size="1" VarA="Drive^Outputs^Out^nCtrl1" VarB="STM Control^Control^Reduce torque" />
+				<Link OffsA="1" Size="1" VarA="Drive^Outputs^Out^nCtrl1" VarB="STM Control^Control^Reset" />
+				<Link VarA="Drive^Outputs^Out^nDataOut2[0]" VarB="STM Velocity^Velocity" />
+				<Link VarA="Enc^Inputs^In^nDataIn1[0]" VarB="ENC Status compact^Counter value" />
+				<Link VarA="Enc^Inputs^In^nDataIn2[0]" VarB="ENC Status compact^Latch value" />
+				<Link OffsA="4" Size="1" VarA="Enc^Inputs^In^nState1" VarB="ENC Status compact^Status^Counter overflow" />
+				<Link OffsA="3" Size="1" VarA="Enc^Inputs^In^nState1" VarB="ENC Status compact^Status^Counter underflow" />
+				<Link OffsA="1" Size="1" VarA="Enc^Inputs^In^nState1" VarB="ENC Status compact^Status^Latch extern valid" />
+				<Link OffsA="2" Size="1" VarA="Enc^Inputs^In^nState1" VarB="ENC Status compact^Status^Set counter done" />
+				<Link OffsA="4" Size="1" VarA="Enc^Inputs^In^nState2" VarB="ENC Status compact^Status^Status of extern latch" />
+				<Link OffsA="5" Size="1" VarA="Enc^Inputs^In^nState2" VarB="ENC Status compact^Status^Sync error" />
+				<Link OffsA="7" Size="1" VarA="Enc^Inputs^In^nState2" VarB="ENC Status compact^Status^TxPDO Toggle" />
+				<Link OffsA="1" Size="1" VarA="Enc^Inputs^In^nState4" VarB="WcState^InputToggle" />
+				<Link VarA="Enc^Inputs^In^nState4" VarB="WcState^WcState" />
+				<Link OffsA="3" Size="1" VarA="Enc^Outputs^Out^nCtrl1" VarB="ENC Control compact^Control^Enable latch extern on negative edge" />
+				<Link OffsA="1" Size="1" VarA="Enc^Outputs^Out^nCtrl1" VarB="ENC Control compact^Control^Enable latch extern on positive edge" />
+				<Link OffsA="2" Size="1" VarA="Enc^Outputs^Out^nCtrl1" VarB="ENC Control compact^Control^Set counter" />
+				<Link VarA="Enc^Outputs^Out^nDataOut1[0]" VarB="ENC Control compact^Set counter value" />
 			</OwnerB>
 		</OwnerA>
 	</Mappings>
